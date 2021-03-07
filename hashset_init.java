@@ -34,3 +34,20 @@ public class Main
 		
 	}
 	
+	
+/*  add array without loop in set*/
+	
+		Integer a[] = { 3,4,4,1,7,5 };
+		int n = a.length;
+		Set<Integer> set = new HashSet<Integer>();
+		set.addAll(Arrays.asList(a));
+	
+			Iterator it = set.iterator();
+		
+		while(it.hasNext()){
+		   int index = (Integer) it.next();
+		   System.out.print(index + "->" + counter[index] +" ");
+		}
+	
+	
+	
