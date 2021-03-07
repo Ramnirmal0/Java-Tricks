@@ -39,7 +39,8 @@ public class Main
 	
 		Integer a[] = { 3,4,4,1,7,5 };
 		int n = a.length;
-		Set<Integer> set = new HashSet<Integer>();
+		Set<Integer> set = new HashSet<Integer>();                   // use just Hashset if wanted to sort the set in built
+		Set<Integer> set = new LinkedHashSet<Integer>();            // use LinkedHashSet if wanted to maintain insertion order;
 		set.addAll(Arrays.asList(a));
 	
 			Iterator it = set.iterator();
