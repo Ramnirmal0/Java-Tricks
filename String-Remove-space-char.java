@@ -7,11 +7,14 @@ public class Main
   {
       
       String str = "i -+$,love, rose";
-      
+    
+    str=str.replaceAll("\\s","").replaceAll("\\,","").replaceAll("\\W","");     // can implement in one line also
+     
+    /*
      str=str.replaceAll("\\s","");     // remove white spaces
       str=str.replaceAll("\\,","");    // remove ,
       str=str.replaceAll("\\W","");   // remove all non words ( + -* $%^&....)
-      
+      */
       System.out.print(str);
   }
 }
